@@ -19,7 +19,7 @@ This software is still BETA quality. The APIs are being finalized.
     '(200 (:content-type "text/plain") ("Hello, World"))))
 
 ;; `wrap` the app with middleware
-(setf *app* (funcall lack-middleware-session:*lack-middleware-session* *app*))
+(setf *app* (funcall lack.middleware.session:*lack-middleware-session* *app*))
 
 ;; to wrap with multiple middlewares at once, use lack's builder macro
 (setf *app*
